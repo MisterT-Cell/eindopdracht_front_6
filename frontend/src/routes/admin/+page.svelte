@@ -107,6 +107,8 @@
                                 <td class="px-6 py-4 flex gap-3">
                                     <a href={`/afspraken/${afspraak.id}`}
                                         class="text-slate-500 hover:text-slate-900 transition">Bekijken</a>
+                                    <a href={`/afspraken/${afspraak.id}/bewerken`}
+                                        class="text-blue-500 hover:text-blue-700 transition">Bewerken</a>
                                     <button onclick={() => verwijder(afspraak.id)}
                                         class="text-red-400 hover:text-red-600 transition">Verwijderen</button>
                                 </td>
