@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('afspraken', function (Blueprint $table) {
             $table->id();
+            $table->string('naam');
+            $table->date('datum');
+            $table->time('tijd');
+            $table->string('dienst');
+            $table->text('opmerking')->nullable();
             $table->timestamps();
         });
     }
